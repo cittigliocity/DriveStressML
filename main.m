@@ -3,7 +3,8 @@ clear;
 
 disp('--- CONVERT DATASET ---');
 
-dataPath = 'C:\Users\fgion\OneDrive\Desktop\DriverStressML\data\raw';
+projectRoot = fileparts(mfilename('fullpath'));
+dataPath = fullfile(projectRoot, 'data', 'raw');
 
 drivername = 'drive01';
 
